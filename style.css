@@ -1,0 +1,33 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+nav {
+    padding: 30px 0 30px 0;
+}
+
+footer {
+    background-color: rgb(151, 165, 137);
+    font-family: sans-serif;
+    padding: 30px 0 20px 0;
+    margin: 0;
+}
+
+.cover {
+    padding-bottom: 30px;
+    width: 50%;
+}
+
+#header-photo {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+#opis {
+    padding: 30px 460px 30px 460px;
+    text-align: left;
+    inline-size: 2;
+}
