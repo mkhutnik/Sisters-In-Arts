@@ -2,7 +2,6 @@ body {
     background-color: white;
     font-family: sans-serif;
     text-align: center;
-    align-items: center;
 }
 
 nav {
@@ -16,10 +15,7 @@ footer {
     margin: 0;
 }
 
-.cover {
-    padding-bottom: 30px;
-    width: 50%;
-}
+
 
 .header-photo {
     width: 100%;
@@ -30,4 +26,68 @@ footer {
     padding: 30px 460px 30px 460px;
     text-align: left;
     line-height: 1.8;
+}
+
+.container-pic {
+    display: flex;
+    /* border: red solid 2px; */
+    margin: 0 30% 0 30%;
+    flex-direction: column;
+}
+
+.cover {
+    flex-wrap: wrap;
+    align-content: stretch;
+    flex: 0 1 auto;
+}
+
+.container-text {
+    display: flex;
+    /* border: white solid 2px; */
+    margin: 0 30% 0 30%;
+    flex-direction: row;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+}
+
+.item{
+
+}
+
+
+
+.container-bio {
+    display: flex;
+    border: red solid 2px;
+    margin: 0 20% 0 20%;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+.bio-pic {
+    border-radius: 50%;
+    width: 80%;
+    border: red solid 2px;
+
+}
+
+.bio {
+    text-align: left;
+    border: red solid 2px;
+    line-height: 1.5;
+}
+
+.gallery-container {
+    display: flex;
+    border: red solid 2px;
+    margin: 0 10% 0 10%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.gallery-item {
+    flex-basis: 50px;
 }
