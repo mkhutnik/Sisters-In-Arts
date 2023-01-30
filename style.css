@@ -1,21 +1,66 @@
 body {
     background-color: white;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     text-align: center;
 }
 
+/* ----------------navbar style -------------------- */
 nav {
-    padding: 30px 0 30px 0;
+    font-family: "Releway", helvetica, Arial, sans-serif;
+    width: 100%;  /* i'm assuming full width */
+    height: 80px; /* change it to desired width */
 }
 
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
+}
+.nav > a {
+    display: inline-block;
+    vertical-align: center;
+    padding: 30px;
+    height: 80px;        /* if you want it to take the full height of the bar */
+    line-height: 80px;    /* if you want it vertically middle of the navbar */
+}
+/* ----------------------------------- -------------------- */
+
+
+
 footer {
-    background-color: rgb(151, 165, 137);
+    background-color: #97a589;
     font-family: sans-serif;
     padding: 30px 0 20px 0;
     margin: 0;
+    line-height: 1.8;
 }
 
+/* ----------------- linki na stronie ----------------- */
+a:link {
+    color: black;
+    text-decoration: none;
+}
 
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #736080;
+    text-decoration: underline;
+}
+/* ----------------- -------------------- ----------------- */
+
+hr {
+    width: 8%;
+    margin-bottom: 30px;
+    border: 3px solid #97a589;
+    border-radius: 5px;
+}
 
 .header-photo {
     width: 100%;
@@ -69,7 +114,6 @@ footer {
     border-radius: 50%;
     width: 80%;
     border: red solid 2px;
-
 }
 
 .bio {
@@ -78,16 +122,20 @@ footer {
     line-height: 1.5;
 }
 
-.gallery-container {
-    display: flex;
+.grid-gallery-container {
+    display: grid;
+    grid-template: repeat(7, 200px) / repeat(3, 250px);
+    gap: 10px 10px;
     border: red solid 2px;
     margin: 0 10% 0 10%;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    align-content: center;
+    padding: 30px;
+
 
 }
 
-.gallery-item {
-    flex-basis: 50px;
+.grid-gallery-item {
+    width: 250px;
+    height: 200px;
+    justify-items: center;
 }
