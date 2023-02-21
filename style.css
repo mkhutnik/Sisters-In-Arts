@@ -8,9 +8,63 @@ body {
 .navbar {
     font-family: "Releway", helvetica, Arial, sans-serif;
     width: 100%;
-    height: 120px; /* change it to desired width */
+    height: 75px; 
     display: flex;
-    background-color: #3e8e41;
+    background-color: white;
+    justify-content: flex-end;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    text-align: left;
+    /* font-size: 20px; */
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 180%;
+    background: whitesmoke;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    text-align: left;
+    padding-left: 0;
+    /* border: solid 1px gray; */
+}
+
+/* ul li a:hover {
+    background: #736080;
+} */
+
+ul li:hover ul.dropdown {
+    display: block;
+} 
+
+.droplink {
+    border-bottom: 1px solid gray;
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.droplink:visited {
+    color: gray;
 }
 
 .logo {
@@ -22,13 +76,13 @@ body {
     margin-right: 500px;
     margin-top: 15px;    /* if you want it vertically middle of the navbar. */
 }
-.nav > a {
+/* .nav > a {
     display: inline-block;
     vertical-align: center;
-    padding: 30px;
-    height: 80px;        /* if you want it to take the full height of the bar */
-    line-height: 80px;    /* if you want it vertically middle of the navbar */
-}
+    padding: 30px 30px 30px 30px;
+
+    font-family: "Releway", helvetica, Arial, sans-serif;
+} */
 /* ----------------------------------- -------------------- */
 
 
@@ -89,6 +143,7 @@ a:hover {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-family: "Releway", helvetica, Arial, sans-serif;
   }
   
   .dropdown-content a:hover {background-color: #f1f1f1}
@@ -167,30 +222,36 @@ hr {
 
 .bio-pic {
     border-radius: 50%;
-    width: 80%;
     border: red solid 2px;
+    width: 230px;
 }
 
 .bio {
     text-align: left;
     border: red solid 2px;
     line-height: 1.5;
+    padding-left: 20px;
 }
 
-.grid-gallery-container {
-    display: grid;
-    grid-template: repeat(7, 200px) / repeat(3, 250px);
-    gap: 10px 10px;
+
+/* ---------------- subpage gallery ----------------------- */
+
+.flex-container-gallery {
+    display: flex;
     border: red solid 2px;
-    margin: 0 10% 0 10%;
+    /* margin: 0 10% 0 10%; */
+    justify-content: center;
     align-content: center;
-    padding: 30px;
-
-
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 10px;
 }
 
-.grid-gallery-item {
-    width: 250px;
-    height: 200px;
+.flex-item-gallery {
+    width: 300px;
+    height: auto;
     justify-items: center;
+    padding: 0 px 10px 0 10px;
+    align-items: center;
 }
